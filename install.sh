@@ -29,3 +29,9 @@ while read pkg; do
 done <aurlist.txt
 
 echo "✅ All packages installed!"
+
+echo "🔗 Applying dotfiles..."
+./setup.sh
+
+echo "⚙️ Running post-install..."
+./post-install.sh
