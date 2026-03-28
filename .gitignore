@@ -1,0 +1,15 @@
+# System junk
+*.log
+*.cache
+.DS_Store
+
+# Node (just in case)
+node_modules/
+
+# Thumbnails / temp
+*.tmp
+*.swp
+
+# Prevent accidental large files
+*.iso
+*.img

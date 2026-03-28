@@ -1,0 +1,15 @@
+{
+    "comment_styles": {
+        ".json": "//",
+        ".conf": "#",
+        ".yaml": "#",
+        ".toml": "#"
+    },
+    "logging": {
+        "enable_console": false,
+        "console_level": "INFO",
+        "file_level": "DEBUG",
+        "journal_level": "INFO",
+        "enable_colors": true
+    }
+}
