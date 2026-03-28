@@ -24,6 +24,8 @@ fi
 # 3. Install AUR packages
 # ------------------------
 echo "📦 Installing AUR packages..."
-yay -S --needed - <aurlist.txt
+while read pkg; do
+  yay -S --needed "$pkg" || echo "⚠️ Skipped $pkg"
+done <aurlist.txt
 
 echo "✅ All packages installed!"
