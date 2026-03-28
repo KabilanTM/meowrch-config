@@ -1,0 +1,13 @@
+bibata-cursor-theme-bin
+cbonsai
+fabric-cli-git
+gray-git
+hotkeyhub-bin
+hyprevents-git
+hyprprop-git
+meowrch-settings
+meowrch-tools
+mewline
+nemo-tags
+pawlette
+xkb-switch
