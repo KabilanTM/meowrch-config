@@ -11,7 +11,7 @@
     //==> Modules Layout
     ///////////////////////////////////////////////////////////////
 	"modules-left": [
-        "custom/l_end","tray","custom/r_end",
+        "custom/l_end", "tray", "custom/r_end",
         "custom/l_end","hyprland/workspaces","custom/r_end",
         "custom/l_end","wlr/taskbar","custom/r_end",
         "custom/l_end","custom/media","custom/r_end","custom/padd"
@@ -28,9 +28,10 @@
     "group/system-info": {
 		"orientation": "horizontal",
 		"modules": [
-			"custom/cpu",
+			"custom/wifi",
+      "custom/cpu",
 			"custom/ram",
-      "custom/wifi",
+      "custom/vpn",
       "custom/net-speed",
       "custom/cpu-temp"
 		]
@@ -59,8 +60,8 @@
     ///////////////////////////////////////////////////////////////
     "tray": {
         "icon-size": 18,
-        "rotate": 0,
-        "spacing": 5
+        "spacing": 8,
+        "show-passive-items": true
     },
     "hyprland/workspaces": {
         "rotate": 0,
@@ -113,7 +114,7 @@
 		"return-type": "json",
 		"format": "{}",
 		"rotate": 0,
-		"interval": 2,
+    "interval": 2,
 		"tooltip": true
 	},
   "custom/wifi": {
@@ -126,7 +127,7 @@
   "custom/net-speed": {
   "exec": "~/.local/bin/net-speed.sh",
   "interval": 2,
-  "format": "{} ",
+  "format": "{}  ",
   "escape": false,
   "tooltip": false
   },
@@ -136,6 +137,13 @@
   "format": "{} ",
   "escape" : false, 
   "tooltip": false
+  },
+  "custom/vpn": {
+    "exec": "vpn-status",
+    "interval": 5,
+    "return-type": "json",
+    "on-click": "protonvpn-app",
+    "format": "{} "
   },
 
     //==> Right Modules

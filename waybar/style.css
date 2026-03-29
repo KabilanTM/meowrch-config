@@ -163,3 +163,17 @@ tooltip {
     background: @main-bg;
     margin: 4px 0px 4px 0px;
 }
+
+#custom-vpn {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+#custom-vpn {
+    color: #f38ba8; /* red default */
+}
+
+#custom-vpn.connected {
+    color: #a6e3a1; /* green */
+}
+

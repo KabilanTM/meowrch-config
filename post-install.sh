@@ -10,3 +10,10 @@ waybar &
 hyprctl reload
 
 echo "✅ UI refreshed!"
+
+# Restart Waybar cleanly
+pkill waybar
+waybar &
+
+# Fix ProtonVPN tray intelligently
+fix-vpn-tray
